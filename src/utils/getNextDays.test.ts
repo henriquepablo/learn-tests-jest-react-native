@@ -1,7 +1,10 @@
 import { getNextDays } from "./getNextDays";
 
-test("should be return next five dasy", () => {
-    const days = getNextDays();
 
-    expect(days.length).toBe(5);
+describe("getNextDays", () => {
+    it("should be return the next five days", () => {
+        const days = getNextDays();
+    
+        expect(days.length).toBe(5);
+    });
 });
